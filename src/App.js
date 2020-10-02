@@ -11,17 +11,17 @@ function App() {
         <div>
 
         <div>
-                                <Navbar bg="light" expand="lg" variant="light">
-                                <Navbar.Brand href={"/"}>Snipper Technology</Navbar.Brand>
-                                <Navbar.Toggle aria-controls="basic-navbar-nav" />
-                                <Navbar.Collapse id="basic-navbar-nav">
-                                <Nav className="ml-auto">
-                                <Nav.Link href={"/"}>UserForm</Nav.Link>
-                                <Nav.Link href={"/dashboard"}>Table</Nav.Link>
-                                </Nav>
-                                </Navbar.Collapse>
-                                </Navbar>
-                            </div>
+            <Navbar bg="light" expand="lg" variant="light">
+            <Navbar.Brand href={"/"}>Snipper Technology</Navbar.Brand>
+            <Navbar.Toggle aria-controls="basic-navbar-nav" />
+            <Navbar.Collapse id="basic-navbar-nav">
+            <Nav className="ml-auto">
+            <Nav.Link href={"/"}>UserForm</Nav.Link>
+            <Nav.Link href={"/dashboard"}>Table</Nav.Link>
+            </Nav>
+            </Navbar.Collapse>
+            </Navbar>
+        </div>
             {/* <Nav.Link to="/">UserForm</Nav.Link> - 
             <Nav.Link to="/DashBoard">Table</Nav.Link>  */}
 
