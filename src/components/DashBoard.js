@@ -7,7 +7,7 @@ function DashBoard(){
     return (
         <div>
             <h3>All Feedback</h3>
-            <Table striped bordered hover>
+            <Table striped responsive bordered hover>
                 <thead>
                     <tr>
                     <th>Form Name</th>

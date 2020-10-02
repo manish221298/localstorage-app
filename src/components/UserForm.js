@@ -1,6 +1,7 @@
 import React, {useState} from "react"
 import {Container, Form, Col, Row, Button} from 'react-bootstrap'
-import {swal} from "sweet-alert"
+//import {swal} from "sweetalert"
+import swal from 'sweetalert';
 
 function UserForm(){
 
@@ -25,6 +26,9 @@ function UserForm(){
         console.log("getItem", arr)
         
         const setItem = localStorage.setItem('arr',JSON.stringify(arr))
+        if(arr){
+            swal("Good job!", "Thank you for completing the information", "success");
+        }
 
 
     }
@@ -98,7 +102,7 @@ function UserForm(){
                             name="name"
                             value={name}
                             onChange={handleChange}
-                            //required
+                            required
                         />
                         </Col>
                     </Row>
