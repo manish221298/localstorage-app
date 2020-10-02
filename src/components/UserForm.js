@@ -23,7 +23,7 @@ function UserForm(){
         // console.log(form)
         arr.push(form)
         arr=  arr.concat(JSON.parse(localStorage.getItem('arr') || "[]"))
-        console.log("getItem", arr)
+        //console.log("getItem", arr)
         
         const setItem = localStorage.setItem('arr',JSON.stringify(arr))
         if(arr){
@@ -108,9 +108,9 @@ function UserForm(){
                     </Row>
 
                      {/* ************************* */}
-                     <Row>
+                     <Row className="mt-3">
                         <Col>
-                        <Form.Label>Quantity:- &nbsp;</Form.Label>
+                        <Form.Label>Rating:- &nbsp;</Form.Label>
                             <Form.Check inline label='Excellent' type="radio" id="excellent" name="rating"
                                 checked={rating==='excellent'}
                                 onChange={()=>{handleRadioChange('excellent')}}
