@@ -2,8 +2,9 @@ import React from "react"
 import { Table } from "react-bootstrap"
 
 function DashBoard(){
-    const table= JSON.parse(localStorage.getItem('arr'))
-    console.log("check", table)
+    const table= JSON.parse(localStorage.getItem('arr') || "[]")
+    const check = table.length >= 1 ? true : false
+    console.log("check", table.length)
     return (
         <div>
             <h3>All Feedback</h3>
@@ -20,9 +21,9 @@ function DashBoard(){
                 </thead>
                 <tbody>
                     {
-                        table.map(ele => {
+                       check > 0 ?  table.map((ele, i) => {
                             return (
-                                <tr>
+                                <tr key={i}>
                                     <td>{ele.formName}</td>
                                     <td>{ele.text}</td>
                                     <td>{ele.phone}</td>
@@ -31,7 +32,7 @@ function DashBoard(){
                                     <td>{ele.name}</td>
                                 </tr>
                             )
-                        })
+                        }) : ""
                     }
                 </tbody>
                 </Table>
