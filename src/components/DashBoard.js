@@ -20,7 +20,7 @@ function DashBoard(){
                 </thead>
                 <tbody>
                     {
-                       table > 0 ? table.map(ele => {
+                        table.map(ele => {
                             return (
                                 <tr>
                                     <td>{ele.formName}</td>
@@ -31,7 +31,7 @@ function DashBoard(){
                                     <td>{ele.name}</td>
                                 </tr>
                             )
-                        }) : ""
+                        })
                     }
                 </tbody>
                 </Table>
