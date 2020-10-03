@@ -21,7 +21,7 @@ function DashBoard(){
                 </thead>
                 <tbody>
                     {
-                       check > 0 ?  table.map((ele, i) => {
+                       check ?  table.map((ele, i) => {
                             return (
                                 <tr key={i}>
                                     <td>{ele.formName}</td>
